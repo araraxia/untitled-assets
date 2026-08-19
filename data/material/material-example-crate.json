@@ -1,0 +1,8 @@
+{
+  "_note": "Dev-test fixture (run_client_test.py). No dedicated crate texture exists yet -- reuses the real human sprite atlas as a placeholder so the material actually loads, same as material-example-fire.json's 'human_atlas' choice.",
+  "id": "mat-crate-001",
+  "name": "crate_base",
+  "atlas": "assets/images/sprites/human/base/v00/char_a_p1_0bas_humn.png",
+  "param_map": null,
+  "overlays": []
+}

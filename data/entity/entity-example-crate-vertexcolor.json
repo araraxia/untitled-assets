@@ -1,0 +1,5 @@
+{
+  "_note": "Dev-test fixture (run_client_test.py) -- isolates the vertex_color stylization hook.",
+  "mesh": "mesh-example-crate-vertexcolor",
+  "material_id": "material/material-example-crate-vertexcolor.json"
+}

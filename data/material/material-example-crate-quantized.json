@@ -1,0 +1,9 @@
+{
+  "_note": "Dev-test fixture (run_client_test.py) -- isolates the color_levels stylization hook (reuses the plain mesh-example-crate.json mesh).",
+  "id": "mat-crate-quantized-001",
+  "name": "crate_quantized",
+  "atlas": "assets/images/sprites/human/base/v00/char_a_p1_0bas_humn.png",
+  "param_map": null,
+  "overlays": [],
+  "color_levels": 4
+}
