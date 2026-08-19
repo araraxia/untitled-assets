@@ -1,8 +1,8 @@
 {
-  "_note": "Dev-test fixture (run_client_test.py) -- isolates the affine_uv stylization hook (a compile-time pipeline variant, not vertex data, so this reuses the plain mesh-example-crate.json mesh).",
+  "_note": "Dev-test fixture (run_client_test.py) -- isolates the affine_uv stylization hook (a compile-time pipeline variant, not vertex data, so this reuses the plain mesh-example-crate.json mesh). Uses the real crate box-face sprite.",
   "id": "mat-crate-affine-001",
   "name": "crate_affine",
-  "atlas": "assets/images/sprites/human/base/v00/char_a_p1_0bas_humn.png",
+  "atlas": "assets/images/sprites/objects/crate_atlas.png",
   "param_map": null,
   "overlays": [],
   "affine_uv": true
