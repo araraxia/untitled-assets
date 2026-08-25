@@ -1,0 +1,10 @@
+{
+  "_note": "Dev-test fixture (run_client_test.py) -- Step 11 of 3d-coordinate-mapping.prompt.md's transform animation clips. Continuous Y-axis spin, composed with entity-example-staff.json's charm part's dangle spring (Step 10) and socket attachment (Step 9) -- all three should be visibly active on the charm at once: spinning, swaying, and rigidly following the shaft's own rotation.",
+  "id": "anim-transform-charm-spin",
+  "type": "transform",
+  "loop": true,
+  "keyframes": [
+    { "time_ms": 0, "rotation": [0, 0, 0] },
+    { "time_ms": 1500, "rotation": [0, 6.283185, 0] }
+  ]
+}

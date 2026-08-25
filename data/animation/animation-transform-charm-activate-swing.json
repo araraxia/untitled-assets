@@ -1,0 +1,12 @@
+{
+  "_note": "Dev-test fixture (run_client_test.py) -- Step 12's mesh-path one-shot action animation example. entity-example-staff.json's charm part plays this via action_animations when the entity's state is 'activate' (backend/engine/example_game_loop.py's example action), overriding its regular looping animation_id (anim-transform-charm-spin) for the duration, then falling back to it automatically once the state reverts. 'loop' here is documentation only -- entity_renderer.py's action-animation path always forces one-shot playback regardless of this field.",
+  "id": "anim-transform-charm-activate-swing",
+  "type": "transform",
+  "loop": false,
+  "keyframes": [
+    { "time_ms": 0,   "rotation": [0, 0, 0] },
+    { "time_ms": 150, "rotation": [1.2, 0, 0] },
+    { "time_ms": 400, "rotation": [-0.3, 0, 0] },
+    { "time_ms": 550, "rotation": [0, 0, 0] }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "_note": "Step 6 verify fixture for .github/prompts/area-system.prompt.md -- not real game content. References the existing crate/staff dev-test entity definitions (registered by client/engine/area_viewer.py's _register_dev_fixtures(), the same fixtures run_client_test.py already uses). 'zones' demonstrates both zones.prompt.md shapes (safe_zone=aabb, staff_marker=mesh, reusing the crate mesh as a placeholder footprint) and 5 of the 8 effect types -- inert data on this branch (Scene only stores/round-trips zones, nothing simulates containment client-side; that's backend/engine/zone.py's ZoneRegistry, verified standalone via run_zone_test.py, wired into a real tick loop only once a game branch's Area.update() exists).",
+  "entities": {
+    "crate_a": {
+      "entity_id": "crate_a",
+      "x": -120,
+      "y": 0,
+      "z": 0,
+      "state": "idle",
+      "facing": "down",
+      "animation_data_paths": ["assets/data/example_human_animations.json"],
+      "render_template": "entity-example-crate",
+      "transform3d": { "rotation": [0, 0.3, 0], "scale": [1, 1, 1] }
+    },
+    "crate_b": {
+      "entity_id": "crate_b",
+      "x": 120,
+      "y": 0,
+      "z": 0,
+      "state": "idle",
+      "facing": "down",
+      "animation_data_paths": ["assets/data/example_human_animations.json"],
+      "render_template": "entity-example-crate",
+      "transform3d": { "rotation": [0, -0.6, 0], "scale": [1, 1, 1] }
+    },
+    "staff": {
+      "entity_id": "staff",
+      "x": 0,
+      "y": 0,
+      "z": -150,
+      "state": "idle",
+      "facing": "down",
+      "animation_data_paths": ["assets/data/example_human_animations.json"],
+      "render_template": "entity-example-staff",
+      "transform3d": { "rotation": [0, 0, 0], "scale": [1, 1, 1] }
+    }
+  },
+  "camera": {
+    "mode": "3d",
+    "position": [0, 150, 400],
+    "target": [0, 30, 0],
+    "up": [0, 1, 0],
+    "fov": 0.7853981633974483,
+    "near": 1,
+    "far": 2000
+  },
+  "lighting": {
+    "ambientColor": [0.8, 0.8, 0.9],
+    "fogColor": [0.1, 0.1, 0.15],
+    "fogNear": 600,
+    "fogFar": 1400
+  },
+  "zones": {
+    "safe_zone": {
+      "shape": {
+        "type": "aabb",
+        "min": [-150, 0, -50],
+        "max": [150, 100, 50]
+      },
+      "on_enter": [
+        { "type": "add_group", "group": "sheltered" },
+        { "type": "set_data", "key": "in_safe_zone", "value": true },
+        { "type": "fire_event", "event": "entered_safe_zone" }
+      ],
+      "on_exit": [
+        { "type": "remove_group", "group": "sheltered" },
+        { "type": "clear_data", "key": "in_safe_zone" },
+        { "type": "fire_event", "event": "exited_safe_zone" }
+      ],
+      "tags": ["example", "aabb"]
+    },
+    "staff_marker": {
+      "shape": {
+        "type": "mesh",
+        "mesh": "mesh-example-crate",
+        "position": [0, 0, -150],
+        "rotation": [0, 0, 0],
+        "scale": [2, 2, 2]
+      },
+      "on_enter": [
+        { "type": "fire_event", "event": "near_staff" }
+      ],
+      "on_exit": [
+        { "type": "fire_event", "event": "left_staff_area" }
+      ],
+      "tags": ["example", "mesh"]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_note": "client/engine/ui/theme.py's default theme. No custom font/skin image assets exist yet -- fonts/skins are intentionally empty; widgets.label() falls back to imgui's own default font, and widgets.panel()/progress_bar() draw flat-colored rects until real skin art is added.",
+  "colors": {
+    "background": [0.10, 0.10, 0.18, 1.0],
+    "surface": [0.09, 0.13, 0.24, 1.0],
+    "border": [0.06, 0.20, 0.38, 1.0],
+    "accent": [0.91, 0.27, 0.38, 1.0],
+    "text": [0.92, 0.92, 0.92, 1.0],
+    "text_muted": [0.53, 0.53, 0.53, 1.0],
+    "health_full": [0.30, 0.69, 0.31, 1.0],
+    "health_low": [0.96, 0.26, 0.21, 1.0],
+    "ap_full": [0.13, 0.59, 0.95, 1.0],
+    "ap_low": [0.61, 0.15, 0.69, 1.0]
+  },
+  "fonts": {},
+  "skins": {}
+}

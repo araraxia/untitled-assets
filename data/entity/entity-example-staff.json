@@ -1,0 +1,32 @@
+{
+  "_note": "Dev-test fixture (run_client_test.py) -- Steps 9-12 of 3d-coordinate-mapping.prompt.md: multi-part/socket attachment, dangle, transform animation clips, and one-shot action animations, all composed on one part at once. 'shaft' is the root part (composes off the entity's own placement); 'charm' attaches to 'shaft's 'charm_socket', normally plays a continuous spin clip (animation_id), but switches to a one-shot swing (action_animations) whenever the entity's state is 'activate' (backend/engine/example_game_loop.py's example action), falling back to the spin once the state reverts -- plus a dangle spring on top of all of it.",
+  "parts": [
+    {
+      "id": "shaft",
+      "mesh": "mesh-example-staff-shaft",
+      "material_id": "material/material-example-crate.json"
+    },
+    {
+      "id": "charm",
+      "mesh": "mesh-example-staff-charm",
+      "material_id": "material/material-example-crate-vertexcolor.json",
+      "attachTo": { "part": "shaft", "socket": "charm_socket" },
+      "localOffset": {
+        "position": [0, -8, 0],
+        "rotation": [0, 0.785, 0],
+        "scale": [1, 1, 1]
+      },
+      "animation_id": "anim-transform-charm-spin",
+      "action_animations": {
+        "activate": "anim-transform-charm-activate-swing"
+      },
+      "dangle": {
+        "stiffness": 6.0,
+        "damping": 0.25,
+        "inertia": 1.5,
+        "gravity": null,
+        "maxOffset": 6.0
+      }
+    }
+  ]
+}
