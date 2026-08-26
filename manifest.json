@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-25T22:07:40.821889+00:00",
+  "generated_at": "2026-08-25T23:48:33.602517+00:00",
   "images": {
     "char_a_p1_0bas_humn": {
       "path": "assets/images/sprites/human/base/v00/char_a_p1_0bas_humn.png",
@@ -134,5 +134,22 @@
     }
   },
   "ui_menus": {},
-  "audio": {}
+  "audio": {
+    "footstep1": {
+      "path": "assets/audio/sfx/footstep1.wav",
+      "type": "sfx",
+      "hash": "a733214773fc2126",
+      "loop": false,
+      "loop_start_s": 0.0,
+      "loop_end_s": null
+    },
+    "hit4": {
+      "path": "assets/audio/sfx/hit4.wav",
+      "type": "sfx",
+      "hash": "93e0935efd5751d8",
+      "loop": false,
+      "loop_start_s": 0.0,
+      "loop_end_s": null
+    }
+  }
 }
