@@ -6,6 +6,10 @@ This project uses a lot of free assets across various locations, this file acts 
 
 - Pine Trees by Quaternius (https://poly.pizza/m/oYtDty0fR6)
 
+## Effects
+
+- 
+
 ## Soundfonts
 
 

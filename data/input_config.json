@@ -16,6 +16,7 @@
     "contextMenu": 2
   },
   "settings": {
-    "inputPollingRate": 16
+    "inputPollingRate": 16,
+    "movement_style": "area_relative"
   }
 }

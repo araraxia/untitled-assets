@@ -1,7 +1,35 @@
 {
   "version": 1,
-  "generated_at": "2026-08-25T23:48:33.602517+00:00",
+  "generated_at": "2026-08-30T01:08:59.791509+00:00",
   "images": {
+    "dust_cloud1": {
+      "path": "assets/images/sprites/effects/dust_cloud1.png",
+      "type": "effect",
+      "width": 192,
+      "height": 64,
+      "hash": "78461a6721c44f8f"
+    },
+    "dust_cloud1_grey": {
+      "path": "assets/images/sprites/effects/dust_cloud1_grey.webp",
+      "type": "effect",
+      "width": 192,
+      "height": 64,
+      "hash": "6e3dfefb2d6d4896"
+    },
+    "dust_cloud2": {
+      "path": "assets/images/sprites/effects/dust_cloud2.png",
+      "type": "effect",
+      "width": 192,
+      "height": 64,
+      "hash": "c24f42b2775bd6b5"
+    },
+    "dust_cloud2_grey": {
+      "path": "assets/images/sprites/effects/dust_cloud2_grey.webp",
+      "type": "effect",
+      "width": 192,
+      "height": 64,
+      "hash": "64055dc4f8e8171f"
+    },
     "char_a_p1_0bas_humn": {
       "path": "assets/images/sprites/human/base/v00/char_a_p1_0bas_humn.png",
       "type": "atlas",
@@ -23,6 +51,20 @@
       "height": 64,
       "hash": "62a2082909bb4977"
     },
+    "green_leaf_grouping_128x128": {
+      "path": "assets/images/sprites/objects/green_leaf_grouping_128x128.webp",
+      "type": "atlas",
+      "width": 128,
+      "height": 128,
+      "hash": "37512e88fc39c1e6"
+    },
+    "green_leaf_grouping_64x64": {
+      "path": "assets/images/sprites/objects/green_leaf_grouping_64x64.webp",
+      "type": "atlas",
+      "width": 64,
+      "height": 64,
+      "hash": "94d26af115c2873e"
+    },
     "test_cursor_strip": {
       "path": "assets/images/ui/test_cursor_strip.png",
       "type": "ui",
@@ -40,6 +82,10 @@
       "path": "assets/data/animation/animation-example-lantern-glow.json",
       "hash": "e181cdcaf7a058ce"
     },
+    "anim-transform-_run_entity_builder_test_autosave_clip": {
+      "path": "assets/data/animation/animation-transform-_run_entity_builder_test_autosave_clip.json",
+      "hash": "72b7ec627c947603"
+    },
     "anim-transform-charm-activate-swing": {
       "path": "assets/data/animation/animation-transform-charm-activate-swing.json",
       "hash": "144f737d908319b4"
@@ -47,6 +93,10 @@
     "anim-transform-charm-spin": {
       "path": "assets/data/animation/animation-transform-charm-spin.json",
       "hash": "205eefda0fc3a616"
+    },
+    "anim-transform-flap": {
+      "path": "assets/data/animation/animation-transform-flap.json",
+      "hash": "a2da20a5aee78891"
     }
   },
   "materials": {
@@ -76,6 +126,14 @@
     }
   },
   "meshes": {
+    "mesh-beak": {
+      "path": "assets/data/mesh/mesh-beak.json",
+      "hash": "1f2cbd64ab0fc946"
+    },
+    "mesh-body": {
+      "path": "assets/data/mesh/mesh-body.json",
+      "hash": "7f74d78b97528d1e"
+    },
     "mesh-example-crate-vertexcolor": {
       "path": "assets/data/mesh/mesh-example-crate-vertexcolor.json",
       "hash": "e174d954a3e06397"
@@ -91,16 +149,40 @@
     "mesh-example-staff-shaft": {
       "path": "assets/data/mesh/mesh-example-staff-shaft.json",
       "hash": "0a0d8f06a94c6b34"
+    },
+    "mesh-l_leg": {
+      "path": "assets/data/mesh/mesh-l_leg.json",
+      "hash": "f58394507d1c03dd"
+    },
+    "mesh-l_wing": {
+      "path": "assets/data/mesh/mesh-l_wing.json",
+      "hash": "812f9efa7df8a3a3"
+    },
+    "mesh-r_leg": {
+      "path": "assets/data/mesh/mesh-r_leg.json",
+      "hash": "660ad92322303907"
+    },
+    "mesh-r_wing": {
+      "path": "assets/data/mesh/mesh-r_wing.json",
+      "hash": "202cbe23dbabd910"
     }
   },
   "entities": {
-    "entity-00000000-0000-0000-0000-000000000001": {
-      "path": "assets/data/entity/entity-00000000-0000-0000-0000-000000000001.json",
-      "hash": "a9f45a47259d387f"
+    "entity-_entity_builder_tmp": {
+      "path": "assets/data/entity/entity-_entity_builder_tmp.json",
+      "hash": "743110e5fd3f489d"
     },
     "entity-_preview_tmp": {
       "path": "assets/data/entity/entity-_preview_tmp.json",
-      "hash": "b76571f6df31b827"
+      "hash": "d5c05d2c057c172c"
+    },
+    "entity-_run_entity_builder_test_autosave_entity": {
+      "path": "assets/data/entity/entity-_run_entity_builder_test_autosave_entity.json",
+      "hash": "b637c31ab784871d"
+    },
+    "entity-bird": {
+      "path": "assets/data/entity/entity-bird.json",
+      "hash": "76f7962a57bc578e"
     },
     "entity-example-crate-affine": {
       "path": "assets/data/entity/entity-example-crate-affine.json",

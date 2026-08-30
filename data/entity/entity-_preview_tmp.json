@@ -1,4 +1,3 @@
 {
-  "mesh": "mesh-example-crate",
-  "material_id": "material/mat-crate-quantized-001.json"
+  "mesh": "mesh-example-crate"
 }
