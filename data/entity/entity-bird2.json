@@ -1,0 +1,40 @@
+{
+  "name": "bird",
+  "parts": [
+    {
+      "id": "body",
+      "name": "body",
+      "mesh": "mesh-body"
+    },
+    {
+      "id": "l_wing",
+      "name": "l_wing",
+      "mesh": "mesh-l_wing",
+      "animation_id": "anim-transform-flap_test"
+    },
+    {
+      "id": "r_wing",
+      "name": "r_wing",
+      "mesh": "mesh-r_wing",
+      "animation_id": "anim-transform-flap_test"
+    },
+    {
+      "id": "beak",
+      "name": "beak",
+      "mesh": "mesh-beak"
+    },
+    {
+      "id": "l_leg",
+      "name": "l_leg",
+      "mesh": "mesh-l_leg",
+      "animation_id": "anim-transform-flap_test"
+    },
+    {
+      "id": "r_leg",
+      "name": "r_leg",
+      "mesh": "mesh-r_leg",
+      "animation_id": "anim-transform-flap_test"
+    }
+  ],
+  "id": "entity-bird2"
+}

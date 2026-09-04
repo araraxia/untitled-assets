@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-30T01:08:59.791509+00:00",
+  "generated_at": "2026-09-02T01:12:13.314494+00:00",
   "images": {
     "dust_cloud1": {
       "path": "assets/images/sprites/effects/dust_cloud1.png",
@@ -94,9 +94,21 @@
       "path": "assets/data/animation/animation-transform-charm-spin.json",
       "hash": "205eefda0fc3a616"
     },
+    "anim-transform-curve": {
+      "path": "assets/data/animation/animation-transform-curve.json",
+      "hash": "847736179742776a"
+    },
+    "anim-transform-curve_test": {
+      "path": "assets/data/animation/animation-transform-curve_test.json",
+      "hash": "dd2657552eceecc2"
+    },
     "anim-transform-flap": {
       "path": "assets/data/animation/animation-transform-flap.json",
-      "hash": "a2da20a5aee78891"
+      "hash": "eeddc510725fed11"
+    },
+    "anim-transform-flap_test": {
+      "path": "assets/data/animation/animation-transform-flap_test.json",
+      "hash": "ae4dea969fd4fa00"
     }
   },
   "materials": {
@@ -170,7 +182,7 @@
   "entities": {
     "entity-_entity_builder_tmp": {
       "path": "assets/data/entity/entity-_entity_builder_tmp.json",
-      "hash": "743110e5fd3f489d"
+      "hash": "2fcfdd007f6366a5"
     },
     "entity-_preview_tmp": {
       "path": "assets/data/entity/entity-_preview_tmp.json",
@@ -178,11 +190,11 @@
     },
     "entity-_run_entity_builder_test_autosave_entity": {
       "path": "assets/data/entity/entity-_run_entity_builder_test_autosave_entity.json",
-      "hash": "b637c31ab784871d"
+      "hash": "c38e24f6d24400cc"
     },
-    "entity-bird": {
-      "path": "assets/data/entity/entity-bird.json",
-      "hash": "76f7962a57bc578e"
+    "entity-bird2": {
+      "path": "assets/data/entity/entity-bird2.json",
+      "hash": "d6fa6f585c58db20"
     },
     "entity-example-crate-affine": {
       "path": "assets/data/entity/entity-example-crate-affine.json",
@@ -206,7 +218,7 @@
     },
     "entity-example-staff": {
       "path": "assets/data/entity/entity-example-staff.json",
-      "hash": "f589e0b7f8bb5f1b"
+      "hash": "f40ab552d222e023"
     }
   },
   "areas": {
