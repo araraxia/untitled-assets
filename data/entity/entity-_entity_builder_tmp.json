@@ -1,8 +1,102 @@
 {
   "parts": [
     {
-      "id": "wing",
-      "mesh": "mesh-example-staff-shaft"
+      "id": "body",
+      "name": "body",
+      "mesh": "mesh-body"
+    },
+    {
+      "id": "l_wing",
+      "name": "l_wing",
+      "mesh": "mesh-l_wing",
+      "localOffset": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "id": "r_wing",
+      "name": "r_wing",
+      "mesh": "mesh-r_wing",
+      "localOffset": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "id": "beak",
+      "name": "beak",
+      "mesh": "mesh-beak"
+    },
+    {
+      "id": "l_leg",
+      "name": "l_leg",
+      "mesh": "mesh-l_leg",
+      "localOffset": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "r_leg",
+      "name": "r_leg",
+      "mesh": "mesh-r_leg",
+      "localOffset": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
     }
   ]
 }
